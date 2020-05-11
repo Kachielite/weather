@@ -1,0 +1,220 @@
+body {
+    background-color: rgba(16, 165, 252, 0.651);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1,
+p {
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.fullbody {
+    border-radius: 20px;
+    -webkit-box-shadow: 10px 10px 44px 16px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 44px 16px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 44px 16px rgba(0, 0, 0, 0.75);
+}
+
+.bodyFrame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 600px;
+    height: 350px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 600px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: rgba(44, 44, 192, 0.74);
+    border-radius: 20px 20px 0 0;
+}
+
+input {
+    outline: none;
+    border-radius: 20px;
+    width: 300px;
+    padding: 5px;
+    padding-left: 10px;
+    border: none;
+}
+
+button {
+    padding: 5px;
+    border-radius: 80%;
+    outline: none;
+    border: none;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    background-color: white;
+}
+
+button:active {
+    transform: scale(0.8);
+}
+
+.tempContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 350px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.788);
+    color: white;
+    border-radius: 0 0 0 20px;
+}
+
+.tempContainer h1 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 7rem;
+}
+
+#metric {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 3rem;
+}
+
+.tempContainer p {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 1.3rem;
+}
+
+.tempContainer img {
+    width: 40px;
+}
+
+.other-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 350px;
+}
+
+.imgBx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 230px;
+    background-color: rgb(6, 194, 241);
+}
+
+.other-info img {
+    width: 200px;
+}
+
+.weatherDescription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 170px;
+    background-color: rgba(44, 44, 192, 0.74);
+    font-size: 2rem;
+    border-radius: 0 0 20px 0;
+}
+
+.weatherDescription p {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-size: 1.3rem;
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .fullbody {
+        width: 350px;
+        height: 600px;
+        border-radius: 20px;
+    }
+    .search {
+        width: 340px;
+        height: 60px;
+        align-self: start;
+        padding: 5px;
+        border-radius: 0;
+        margin: 0;
+        border-radius: 20px 20px 0 0;
+    }
+    input {
+        width: 250px;
+        padding: 6px;
+    }
+    .bodyFrame {
+        flex-direction: column;
+        width: 350px;
+        height: 530px;
+        border-radius: 20px;
+    }
+    .tempContainer {
+        width: 350px;
+        height: 200px;
+        border-radius: 0;
+    }
+    .tempContainer h1 {
+        font-size: 4rem;
+    }
+    .tempContainer p,
+    #metric {
+        font-size: 1.5rem;
+    }
+    .other-info {
+        width: 350px;
+        height: 350px;
+    }
+    .imgBx {
+        width: 350px;
+        height: 200px;
+    }
+    .weatherDescription {
+        width: 350px;
+        height: 200px;
+        border-radius: 0 0 20px 20px;
+    }
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    body {
+        height: 60vh;
+    }
+}
+
+
+/* iPads (landscape) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    body {
+        height: 20vh;
+    }
+}
