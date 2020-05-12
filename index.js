@@ -21,6 +21,12 @@ async function ipLookUp() {
 
     })
 
+    document.addEventListener("keydown", function() {
+        if (event.keyCode === 13) {
+        cityName = `${innerText.value}`
+        load();}
+
+    })
 
 
 
